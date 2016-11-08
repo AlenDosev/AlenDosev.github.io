@@ -10,6 +10,7 @@ $(document).ready(function(){
     //         prevButton: '.swiper-button-prev',
     //         spaceBetween: 0
     //     });
+    $(".logo").css('opacity','1');
 });
 
 $(window).scroll(function(){
