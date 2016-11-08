@@ -16,10 +16,11 @@ body{
 
 .logo{
     transition: all 5s;
-    opacity: 0;
+    opacity: 0;    
 }
 
 .logo img{
+    padding: 40px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
 }
