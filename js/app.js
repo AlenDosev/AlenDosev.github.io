@@ -1,15 +1,26 @@
 
 $(document).ready(function(){
-    // var swiper = new Swiper('.swiper-container', {
-    //         pagination: '.swiper-pagination',
-    //         slidesPerView: 1,
-    //         paginationClickable: true,
-    //         spaceBetween: 30,
-    //         keyboardControl: true,
-    //         nextButton: '.swiper-button-next',
-    //         prevButton: '.swiper-button-prev',
-    //         spaceBetween: 0
-    //     });
+    var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            keyboardControl: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 0
+        });
+    var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            keyboardControl: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 0
+        });
+
     $(".logo").css('opacity','1');
 });
 
