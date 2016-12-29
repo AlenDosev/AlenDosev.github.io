@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Panda</title>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link rel="icon" href="halza.ico" type="image/x-icon" />-->
 
         <!-- Scripts -->
@@ -17,101 +17,136 @@
         <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css">
 
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
-        <div class="main-header col-xs-12">
-            <div class="logo col-xs-3">
-                <img src="img/logo.png" />
-            </div>
-        </div>
-        <div class="home-content-container col-xs-12">
-            <div class="main-content-2 col-xs-12">
-                <div id="test" class="col-xs-12">
-                    <h1 class="desc">Daily SPecial</h1>
-                    <div class="bla">
+        <div class="col-xs-12">
+            <div class="main-content col-xs-12">
+                <div class="nav col-xs-12">
+                    <div class="nav-item" onclick="goTo('menu')">
+                        <span>Menu</span>
+                    </div>
+                    <div class="nav-item" onclick="goTo('galery')">
+                        <span>Gallery</span>
+                    </div>
+                    <div class="nav-item" onclick="goTo('location')">
+                        <span>Location</span>
+                    </div>
+                </div>
+                <div class="content-1 col-xs-12">
+                    <div class="logo col-xs-5">
+                        <img src="img/logo.png" />
+                    </div>
+                </div>
+                <div class="con-left col-xs-6">
+                    <div>
                         <h1>SAVAITES PASIULYMAS</h1>
                         <h2>Didele porcija vistienos GAU BAO</h2>
-                        <h2>+<h2>
-                    </div>
+                        <h2>+</h2>
+                        <h2>Coca Cola</h2>
+                    </div>               
                 </div>
-                <div class="col-xs-12" style="height: 512px; background: white;">
-                    <h1 class="desc">Menu</h1>
-                    <!-- Swiper -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-01.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-02.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-01.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-02.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-01.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-02.jpg" />
-                            </div>
+                <div class="con-right col-xs-6"></div>
+
+                <div id="menu" class="menu col-xs-12">
+                    <h1>Menu</h1>
+                    <div class="menu-nav col-xs-12">
+                        <div class="menu-nav-item" onclick="move(1)">
+                            <span>Dinner</span>
                         </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                <div class="col-xs-12" style="height: 512px; background: yellow;">
-                    <h1 class="desc">Galery</h1>
-                    <!-- Swiper -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-01.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img height="500" src="img/Dienos meniu-02.jpg" />
-                            </div>
+                        <div class="menu-nav-item" onclick="move(2)">
+                            <span>Drinks</span>
                         </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-                <div class="contact col-xs-12">
-                    <h1 class="desc">Location</h1>
-                    <h1>Location</h1>
-                    <div class="col-xs-7">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2294.191616224284!2d23.89007884368729!3d54.89955895366304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fdb89dc698d5986!2sKin%C5%B3+Panda+Restoranas!5e0!3m2!1sen!2s!4v1478969194945" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-xs-5">
-                        <div class="col-xs-12">
-                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                            <span>861220215</span><br />
-                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                            <span>M. Daukšos g. 51, Kaunas 44269, Lithuania</span><br />
-                            <h1>Open Daily</h1>
-                            <span>Mon - thur : 10 - 22 <br />
-                                    Fri : 10 - 23 <br />
-                                        Sat 11 - 23<br />
-                                    Sun 11 - 21</span>
+                        <div class="menu-nav-item" onclick="move(3)">
+                            <span>Lunch</span>
                         </div>
                     </div>
+                    <div class="pointer col-xs-12">
+                        <div id="circle" class="arrow-up" style="margin-left: calc(50% - 20px);"></div>
+                        <div class="pointer-line"></div>
+                    </div>
+                    <div class="menu-content col-xs-10 col-xs-offset-1">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img height="500" src="img/Dienos meniu-01.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img width="100%" src="img/fast-food.jpg" />
+                                        <div class="col-xs-9">
+                                            Kepti makaronai su klauliena
+                                        </div>
+                                        <div class="col-xs-3">
+                                            5$
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img height="500" src="img/Dienos meniu-01.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
                 </div>
-            </div>
+
+                <div id="galery" class="galery col-xs-12">
+                    <h2>Gallery</h2>
+
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                    <div class="col-xs-3">
+                        <img width="100%" src="img/fast-food.jpg" />
+                    </div>
+                </div>
+
+                <div id="location" class="location-container col-xs-12">
+                    <h2>Location</h2>
+                    <div class="location col-xs-12">
+                        <div class="location-open col-xs-4">
+                            <div>
+                                <h1>Open Daily</h1>
+                                <span>Mon - thur : 10 - 22 <br />
+                                        Fri : 10 - 23 <br />
+                                            Sat 11 - 23<br />
+                                        Sun 11 - 21</span><br />
+                                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                <span>861220215</span><br />
+                                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                <span>M. Daukšos g. 51, Kaunas 44269, Lithuania</span><br />
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="location-map col-xs-8">
+                            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2294.191616224284!2d23.89007884368729!3d54.89955895366304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fdb89dc698d5986!2sKin%C5%B3+Panda+Restoranas!5e0!3m2!1sen!2s!4v1478969194945" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div> 
+            </div>     
         </div>
-        <!--<div class="main">
-            <div class='uil-reload-css'>
-                <div style=""></div>  
-                <span>Hi Bunny ...</span>             
-            </div>              
-        </div>        -->
-       
+                  
     </body>
 </html>
