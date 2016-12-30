@@ -12,6 +12,21 @@ $(document).ready(function(){
 
     swiper.slideTo(1, 1);
 
+    
+
+    $('#myModal').on('shown.bs.modal', function () {
+        swiper2 = new Swiper('.swiper-container2', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            keyboardControl: true,
+            spaceBetween: 0,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        });
+    });
+
     $(".logo > div").css('opacity','1');
 
     fixSquareHeight();
