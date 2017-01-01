@@ -11,7 +11,7 @@ $(document).ready(function(){
             simulateTouch:false
         });
 
-    swiper.slideTo(0, 1);
+    swiper.slideTo(2, 1);
    
     $('#myModal').on('shown.bs.modal', function () {
         swiper2 = new Swiper('.swiper-container2', {
