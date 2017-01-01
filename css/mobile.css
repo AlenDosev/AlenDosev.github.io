@@ -3,12 +3,20 @@
     .main-content{
         width: 1124px;
     }
+
+    .menu-nav-mobile{
+        display: none;
+    }
 }
 
 /* Medium Screen */
 @media screen and (min-width: 1041px) and (max-width: 1440px) {
     .main-content{
         width: 1124px;
+    }
+
+    .menu-nav-mobile{
+        display: none;
     }
 }
 
@@ -17,12 +25,20 @@
     .main-content{
         width: 100%;
     }
+
+    .menu-nav-mobile{
+        display: none;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 461px) and (max-width: 800px){
    .main-content{
         width: 100%;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
     }
 }
 
@@ -31,6 +47,10 @@
     .main-content{
         width: 100%;
     }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
 }
 
 /* Mobile M */
@@ -38,11 +58,19 @@
    .main-content{
         width: 100%;
     }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
 }
 
 /* Mobile S */
 @media screen and (max-width: 321px) {
     .main-content{
         width: 100%;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
     }
 }

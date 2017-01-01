@@ -97,6 +97,21 @@ body{
     color: rgb(175, 31, 48);
 }
 
+.menu-nav-mobile{
+    color: black;
+}
+
+.menu-nav-mobile select{
+    width: 100%;
+    padding: 8px 25px 8px 15px;
+    background: white url(../img/select-dropdown.png) right 0 no-repeat;
+    border-radius: 3px;
+    border: solid thin gray;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .pointer{
     background-color: inherit;
     height: 14px;
@@ -117,7 +132,7 @@ body{
 .pointer-line{
     height: 7px;
     border-bottom-style: solid;
-    border-color: #F8F1EC;
+    border-color: #f8f6f1;
     border-width: thin;
     width: 100%;
     margin-top: -7px;
@@ -166,7 +181,7 @@ body{
 }
 
 .gallery-action > button{
-    background: #F8F1EC;
+    background: #f8f6f1;
     color: #161513;
     border: none;
     padding: 8px 15px;
@@ -176,7 +191,7 @@ body{
 
 .location-container{
     padding: 30px;
-    background: #F8F1EC;
+    background: #f8f6f1;
     color: #161513;
     text-align: center;
 }
@@ -207,6 +222,12 @@ body{
     margin-bottom: -10px;
 }
 
+.contact{
+    text-align: left;
+    margin-top: 20px;
+    border-top: solid thin #f8f6f1;
+}
+
 .modal-dialog{
     width: 90%;
     height: 90%;
@@ -217,6 +238,24 @@ body{
 .modal-content{
     height: 100%;
     border-right: 3px;
+    background: #21201E;
+}
+
+.modal-content button{
+    opacity: 0.8;
+}
+
+.modal-content button:hover{
+    opacity: 1;
+}
+
+.modal-content button i{
+    width: 35px;
+    height: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal.in .modal-dialog{
@@ -230,7 +269,7 @@ body{
 .swiper-container2 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #21201E;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -245,5 +284,17 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.swiper-pagination-bullet-active{
+    background: #7F1722;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%237F1722'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%237F1722'%2F%3E%3C%2Fsvg%3E");
 }
 

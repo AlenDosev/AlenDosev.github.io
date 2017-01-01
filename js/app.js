@@ -26,6 +26,12 @@ $(document).ready(function(){
         });
     });
 
+    $(".menu-nav-mobile select").change(function (){
+        move($(".menu-nav-mobile select").val());
+    });
+
+    
+
     $(".logo > div").css('opacity','1');
 
     fixSquareHeight();

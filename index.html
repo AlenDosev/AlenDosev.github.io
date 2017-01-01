@@ -43,7 +43,7 @@
                         <img src="img/logo.png" />
                     </div>
                 </div>
-                <div class="content-box-2 half-square col-xs-12">
+                <div class="content-box-2 square col-xs-12">
                     <div>
                         <h1>SAVAITES PASIULYMAS</h1>
                         <h2>Didele porcija vistienos GAU BAO</h2>
@@ -92,6 +92,22 @@
                             <span>Deserts</span>
                         </div>
                     </div>
+                    <div class="menu-nav-mobile col-xs-12">
+                        <select>
+                            <option value="0" selected>Lunch</option>
+                            <option value="1">Soups</option>
+                            <option value="2">Salads</option>
+                            <option value="3">Vegetable meals</option>
+                            <option value="4">Chicken</option>
+                            <option value="5">Pork</option>
+                            <option value="6">Beef</option>
+                            <option value="7">Duck</option>
+                            <option value="8">Fish</option>
+                            <option value="9">Sea Food</option>
+                            <option value="10">Other Dishes</option>
+                            <option value="11">Deserts</option>
+                        </select>
+                    </div>
                     <div class="pointer col-xs-12">
                         <div id="circle" class="arrow-up" style="margin-left: calc(50% - 20px);"></div>
                         <div class="pointer-line"></div>
@@ -115,8 +131,8 @@
                                        </div>                                       
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="menu-item square col-xs-6">
+                                <div class="soups swiper-slide">
+                                    <div class="menu-item square col-xs-12">
                                         <div>
                                             <div class="menu-item-row col-xs-12">
                                                 <img height="500" src="img/Dienos meniu-01.jpg" />
@@ -338,11 +354,12 @@
                                         Fri : 10 - 23 <br />
                                             Sat 11 - 23<br />
                                         Sun 11 - 21</span><br />
-                                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-                                <span>861220215</span><br />
-                                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-                                <span>M. Daukšos g. 51, Kaunas 44269, Lithuania</span><br />
-                                
+                                <div class="contact col-xs-12">
+                                    <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                                    <span>861220215</span><br />
+                                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                                    <span>M. Daukšos g. 51, Kaunas 44269, Lithuania</span>
+                                </div>                               
                             </div>
                             
                         </div>
@@ -360,7 +377,9 @@
             
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                    </button>
                     <div class="swiper-container2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -386,8 +405,6 @@
                 </div>
             
             </div>
-        </div>  
-        
-                  
+        </div>                   
     </body>
 </html>
