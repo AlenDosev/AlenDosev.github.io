@@ -1,7 +1,7 @@
 /* Large Screen */
 @media screen and (min-width: 1441px){
     .main-content{
-        width: 1124px;
+        width: 1224px;
     }
 
     .menu-nav-mobile{
@@ -12,7 +12,7 @@
 /* Medium Screen */
 @media screen and (min-width: 1041px) and (max-width: 1440px) {
     .main-content{
-        width: 1124px;
+        width: 1224px;
     }
 
     .menu-nav-mobile{
@@ -51,6 +51,13 @@
     .menu-nav, .pointer{
         display: none;
     }
+
+    .about-text span{
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
 }
 
 /* Mobile M */

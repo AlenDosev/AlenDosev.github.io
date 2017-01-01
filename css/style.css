@@ -44,7 +44,8 @@ body{
 .logo{
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center; 
+    background: #7F1722;  
 }
 
 .logo > div{
@@ -150,9 +151,10 @@ body{
 
 .menu-content{
     padding: 0px;
-    margin-top: 30px;
-    margin-left: 4.16%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #7F1722;
 }
 
 .swiper-slide{
@@ -173,7 +175,7 @@ body{
     background: #fff;
     border-radius: 2px;
     display: inline-block;
-    height: 230px;
+    padding: 10px;
     text-align: center;
     margin: 1rem;
     position: relative;
@@ -188,8 +190,26 @@ body{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.cards > div{
+.cards > div, .cards{
     padding: 0px;   
+}
+
+.card h3{
+    margin-top: 10px;
+}
+
+.meal-items{
+    font-style: italic;
+}
+
+.meal-cost{
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.meal-cost i{
+    font-size: 15px;
 }
 
 .galery{
@@ -319,5 +339,33 @@ body{
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%237F1722'%2F%3E%3C%2Fsvg%3E");
+}
+
+.about{
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about h1{
+    margin-bottom: 30px;
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text span{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
 }
 

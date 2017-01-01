@@ -30,7 +30,16 @@ $(document).ready(function(){
         move($(".menu-nav-mobile select").val());
     });
 
-    
+    var cardWidth = $(".card").width() + 20;
+    if($( window ).width() > 1399){
+        $(".card").css('height', (cardWidth * 0.8) + 'px');
+    }
+    else if($( window ).width() > 460){
+        $(".card").css('height', cardWidth + 'px');
+    }
+    else{
+        $(".card").css('height', (cardWidth * 0.5) + 'px');
+    }
 
     $(".logo > div").css('opacity','1');
 
