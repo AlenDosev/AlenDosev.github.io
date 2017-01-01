@@ -38,7 +38,17 @@ $(document).ready(function(){
         $(".card").css('height', cardWidth + 'px');
     }
     else{
-        $(".card").css('height', (cardWidth * 0.5) + 'px');
+        $(".card").css('height', (cardWidth * 0.6) + 'px');
+    }
+
+    if($( window ).width() > 1399){
+        $(".card.small").css('height', (cardWidth * 0.6) + 'px');
+    }
+    else if($( window ).width() > 460){
+        $(".card.small").css('height', (cardWidth * 0.9) + 'px');
+    }
+    else{
+        $(".card.small").css('height', (cardWidth * 0.5) + 'px');
     }
 
     $(".logo > div").css('opacity','1');
