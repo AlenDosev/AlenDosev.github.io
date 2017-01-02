@@ -212,6 +212,39 @@ body{
     font-size: 15px;
 }
 
+.lunch{
+    text-align: start;
+    padding: 15px 35px;
+}
+
+.lunch > div{
+    padding: 20px;
+}
+
+.lunch-row{
+    border-bottom: dotted 2px white;
+    padding: 0px;
+    margin: 9px 0px;
+}
+
+.lunch-row.last{
+    border-bottom: none;
+}
+
+.lunch-number{
+    padding: 0px;
+    color: #EBC478;
+}
+
+.lunch-title{
+    padding: 0px;
+}
+
+.lunch-cost{
+    text-align: right;
+    padding: 0px;
+}
+
 .galery{
     text-align: center;
     color: white;

@@ -41,16 +41,6 @@ $(document).ready(function(){
         $(".card").css('height', (cardWidth * 0.6) + 'px');
     }
 
-    if($( window ).width() > 1399){
-        $(".card.small").css('height', (cardWidth * 0.6) + 'px');
-    }
-    else if($( window ).width() > 460){
-        $(".card.small").css('height', (cardWidth * 0.9) + 'px');
-    }
-    else{
-        $(".card.small").css('height', (cardWidth * 0.5) + 'px');
-    }
-
     $(".logo > div").css('opacity','1');
 
     fixSquareHeight();
@@ -75,9 +65,11 @@ function fixSquareHeight() {
     if (windowWidth < 460) {
         $(".square").css('min-height', windowWidth + 'px');
         $(".half-square").css('min-height', (windowWidth * 0.75) + 'px');
+        $(".quarter-square").css('min-height', (windowWidth * 0.5) + 'px');
     }
     else {
         $(".square").css('min-height', (windowWidth / 2) + 'px');
         $(".half-square").css('min-height', ((windowWidth / 2) * 0.75) + 'px');
+        $(".quarter-square").css('min-height', ((windowWidth / 2) * 0.5) + 'px');
     }  
 }
