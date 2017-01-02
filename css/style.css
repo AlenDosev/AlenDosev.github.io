@@ -3,7 +3,8 @@ body{
     background-size: contain;
     background-repeat: repeat;
     background-position: center center;
-    font-family: 'Roboto';
+    /*font-family: 'Roboto';*/
+    font-family: 'Dosis', sans-serif;
     font-size: 16px;
     padding-right: 0px !important;
 }
@@ -196,6 +197,7 @@ body{
 
 .card h3{
     margin-top: 10px;
+    font-size: 22px;
 }
 
 .meal-items{
@@ -401,4 +403,3 @@ body{
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
 }
-

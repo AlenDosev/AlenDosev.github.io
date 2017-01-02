@@ -41,6 +41,16 @@ $(document).ready(function(){
         $(".card").css('height', (cardWidth * 0.6) + 'px');
     }
 
+    if($( window ).width() > 1399){
+        $(".bigger .card").css('height', (cardWidth * 0.9) + 'px');
+    }
+    else if($( window ).width() > 460){
+        $(".bigger .card").css('height', (cardWidth * 1.1) + 'px');
+    }
+    else{
+        $(".bigger .card").css('height', (cardWidth * 0.7) + 'px');
+    }
+
     $(".logo > div").css('opacity','1');
 
     fixSquareHeight();
