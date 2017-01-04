@@ -15,11 +15,17 @@ $(document).ready(function(){
     swiper.slideTo(2, 1);
 
     swiper.on('onSlideNextEnd', function () {
-        $(".menu-nav-mobile select").val(swiper.activeIndex);       
+        $(".menu-nav-mobile select").val(swiper.activeIndex);  
+        if($( window ).width() < 900){
+            $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
+        }     
     });
 
     swiper.on('onSlidePrevEnd', function () {
-        $(".menu-nav-mobile select").val(swiper.activeIndex);       
+        $(".menu-nav-mobile select").val(swiper.activeIndex);    
+        if($( window ).width() < 900){
+            $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
+        }   
     });
    
     $('#myModal').on('shown.bs.modal', function () {
@@ -37,6 +43,9 @@ $(document).ready(function(){
 
     $(".menu-nav-mobile select").change(function (){
         move($(".menu-nav-mobile select").val());
+        if($( window ).width() < 900){
+            $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
+        }
     });
 
     var cardWidth = $(".card").width() + 20;
@@ -47,7 +56,7 @@ $(document).ready(function(){
         $(".card").css('height', cardWidth + 'px');
     }
     else{
-        $(".card").css('height', (cardWidth * 0.55) + 'px');
+        $(".card").css('height', (cardWidth * 0.6) + 'px');
     }
 
     if($( window ).width() > 1399){
@@ -57,13 +66,17 @@ $(document).ready(function(){
         $(".bigger .card").css('height', (cardWidth * 1.1) + 'px');
     }
     else{
-        $(".bigger .card").css('height', (cardWidth * 0.55) + 'px');
+        $(".bigger .card").css('height', (cardWidth * 0.6) + 'px');
     }
 
     $(".logo > div").css('opacity','1');
 
     fixSquareHeight();
     move(0);
+
+    if($( window ).width() < 900){
+        $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
+    }
 });
 
 function move(item){

@@ -106,7 +106,7 @@ body{
 .menu-nav-mobile select{
     width: 100%;
     padding: 8px 25px 8px 15px;
-    background: #f8f6f1; url(../img/select-dropdown.png) right 0 no-repeat;
+    background: #f8f6f1 url(../img/select-dropdown.png) right 0 no-repeat;
     border-radius: 3px;
     border: solid thin gray;
     -moz-appearance: none;
@@ -164,7 +164,7 @@ body{
 }
 
 .card {
-    background: #fff;
+    background: #f8f6f1;
     border-radius: 2px;
     display: inline-block;
     padding: 10px;
