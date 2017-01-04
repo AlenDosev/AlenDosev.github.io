@@ -66,7 +66,7 @@ function move(item){
 }
 
 function goTo(place){
-    $("html, body").animate({ scrollTop: $("#" + place).offset().top - 50 }, "slow");
+    $("html, body").animate({ scrollTop: $("#" + place).offset().top }, "slow");
 }
 
 function fixSquareHeight() {

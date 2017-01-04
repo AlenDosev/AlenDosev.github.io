@@ -54,8 +54,20 @@
         padding: 5px;
     }
 
+    .lunch-row{
+        padding: 0px 5px;
+    }
+
     .card h3{
         font-size: 20px;
+    }
+
+    .menu-content {
+        padding: 0px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        background: #7F1722;
     }
 }
 
@@ -63,6 +75,14 @@
 @media screen and (max-width: 460px) {
     .main-content{
         width: 100%;
+    }
+
+    .nav-item {
+        padding: 5px;
+    }
+
+    .location-container{
+        padding: 15px;
     }
 
     .menu-nav, .pointer{

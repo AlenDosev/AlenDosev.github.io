@@ -39,7 +39,7 @@ body{
 }
 
 .nav-item:hover{
-    color: white;
+    color: #f8f6f1;;
 }
 
 .logo{
@@ -73,13 +73,13 @@ body{
 .content-box-2 > div{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f8f6f1;;
     border-right: 1px;
 }
 
 .menu{
     text-align: center;
-    color: white;
+    color: #f8f6f1;;
     padding: 20px 0px;
 }
 
@@ -106,7 +106,7 @@ body{
 .menu-nav-mobile select{
     width: 100%;
     padding: 8px 25px 8px 15px;
-    background: white url(../img/select-dropdown.png) right 0 no-repeat;
+    background: #f8f6f1; url(../img/select-dropdown.png) right 0 no-repeat;
     border-radius: 3px;
     border: solid thin gray;
     -moz-appearance: none;
@@ -215,7 +215,7 @@ body{
 }
 
 .lunch-row{
-    border-bottom: dotted 1px white;
+    border-bottom: dotted 1px #f8f6f1;;
     padding: 0px;
     margin: 9px 0px;
 }
@@ -240,7 +240,7 @@ body{
 
 .galery{
     text-align: center;
-    color: white;
+    color: #f8f6f1;;
     padding: 0px;
     padding: 15px;
 }
@@ -280,6 +280,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .location-open i{
@@ -291,10 +292,16 @@ body{
     margin-bottom: -10px;
 }
 
-.contact{
+.location-open-row{
     text-align: left;
-    margin-top: 20px;
-    border-top: solid thin #f8f6f1;
+    border-bottom: solid thin #f8f6f1;
+    padding: 20px 10px;
+    color: #f8f6f1;
+    font-size: 17px;
+}
+
+.location-open-row h2{
+    margin-top: 0px;
 }
 
 .modal-dialog{
@@ -321,7 +328,7 @@ body{
 .modal-content button i{
     width: 35px;
     height: 35px;
-    color: white;
+    color: #f8f6f1;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,8 +375,8 @@ body{
 }
 
 .about{
-    color: white;
-    padding: 30px;
+    color: #f8f6f1;;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
