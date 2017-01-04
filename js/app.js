@@ -8,10 +8,19 @@ $(document).ready(function(){
             spaceBetween: 0,
             keyboardControl: false,
             spaceBetween: 0,
-            simulateTouch:false
+            simulateTouch: false,
+            touchMoveStopPropagation: true
         });
 
     swiper.slideTo(2, 1);
+
+    swiper.on('onSlideNextEnd', function () {
+        $(".menu-nav-mobile select").val(swiper.activeIndex);       
+    });
+
+    swiper.on('onSlidePrevEnd', function () {
+        $(".menu-nav-mobile select").val(swiper.activeIndex);       
+    });
    
     $('#myModal').on('shown.bs.modal', function () {
         swiper2 = new Swiper('.swiper-container2', {
@@ -38,7 +47,7 @@ $(document).ready(function(){
         $(".card").css('height', cardWidth + 'px');
     }
     else{
-        $(".card").css('height', (cardWidth * 0.45) + 'px');
+        $(".card").css('height', (cardWidth * 0.55) + 'px');
     }
 
     if($( window ).width() > 1399){
@@ -48,7 +57,7 @@ $(document).ready(function(){
         $(".bigger .card").css('height', (cardWidth * 1.1) + 'px');
     }
     else{
-        $(".bigger .card").css('height', (cardWidth * 0.45) + 'px');
+        $(".bigger .card").css('height', (cardWidth * 0.55) + 'px');
     }
 
     $(".logo > div").css('opacity','1');
