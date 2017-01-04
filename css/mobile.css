@@ -29,6 +29,10 @@
     .menu-nav-mobile{
         display: none;
     }
+
+    .card h3{
+        font-size: 20px;
+    }
 }
 
 /* Tablet */
@@ -39,6 +43,19 @@
 
     .menu-nav, .pointer{
         display: none;
+    }
+
+    .lunch {
+        text-align: start;
+        padding: 15px 0px;
+    }
+
+    .lunch > div {
+        padding: 5px;
+    }
+
+    .card h3{
+        font-size: 20px;
     }
 }
 
@@ -56,6 +73,23 @@
         -webkit-column-count: 1; /* Chrome, Safari, Opera */
         -moz-column-count: 1; /* Firefox */
         column-count: 1;
+    }
+
+    .lunch {
+        text-align: start;
+        padding: 15px 0px;
+    }
+
+    .lunch > div {
+        padding: 5px;
+    }
+
+    .menu-content {
+        padding: 0px;
+        width: calc(100% - 20px);
+        margin-top: 10px;
+        margin-left: 10px;
+        background: #7F1722;
     }
 
 }

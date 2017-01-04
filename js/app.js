@@ -38,7 +38,7 @@ $(document).ready(function(){
         $(".card").css('height', cardWidth + 'px');
     }
     else{
-        $(".card").css('height', (cardWidth * 0.6) + 'px');
+        $(".card").css('height', (cardWidth * 0.45) + 'px');
     }
 
     if($( window ).width() > 1399){
@@ -48,7 +48,7 @@ $(document).ready(function(){
         $(".bigger .card").css('height', (cardWidth * 1.1) + 'px');
     }
     else{
-        $(".bigger .card").css('height', (cardWidth * 0.7) + 'px');
+        $(".bigger .card").css('height', (cardWidth * 0.45) + 'px');
     }
 
     $(".logo > div").css('opacity','1');
