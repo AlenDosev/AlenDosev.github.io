@@ -401,3 +401,82 @@ body{
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
 }
+
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin: 0px 10px !important;
+    background: #7F1722;
+    opacity: .7;
+}
+
+
+#packman{
+	z-index: 20;
+    position: absolute; 
+    transition: left 0.3s ease-in-out 0.2s, transform 1s; 
+    width: 20px; 
+    height: 20px; 
+    transform: translate(55.0163px, -5px); 
+    top: -30px; 
+    left: 5px;
+}
+
+#topMouth{
+    position: absolute; 
+    width: 20px; 
+    height: 10px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    background: white;
+}
+
+#bottomMouth{
+    position: absolute; 
+    width: 20px; 
+    height: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    background: white; 
+    top: 10px;
+}
+
+@keyframes pacmanTopFrames {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-30deg);
+	}
+}
+
+@keyframes pacmanBottomFrames {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes pacmanTopFramesBis {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes pacmanBottomFramesBis {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-30deg);
+	}
+}

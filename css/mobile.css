@@ -106,10 +106,14 @@
 
     .menu-content {
         padding: 0px;
-        width: calc(100% - 20px);
+        width: 100%;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 0px;
         background: #7F1722;
+    }
+
+    .lunch-row{
+        padding: 0px 5px;
     }
 
 }

@@ -20,13 +20,14 @@ $(document).ready(function(){
             $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
         }     
     });
-
+		
     swiper.on('onSlidePrevEnd', function () {
         $(".menu-nav-mobile select").val(swiper.activeIndex);    
         if($( window ).width() < 900){
             $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
         }   
     });
+		
    
     $('#myModal').on('shown.bs.modal', function () {
         swiper2 = new Swiper('.swiper-container2', {
@@ -39,6 +40,28 @@ $(document).ready(function(){
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
         });
+		
+		$("#packman").css("transform", "translate(" + $(".swiper-pagination-bullet:nth(0)").position().left + "px, calc(" + $(".swiper-container2").height() + "px))");
+
+        swiper2.on('onSlideNextStart', function () {
+            $("#topMouth").css("animation", "pacmanTopFrames 0.12s linear 8 alternate both");
+            $("#bottomMouth").css("animation", "pacmanBottomFrames 0.12s linear 8 alternate both");
+            $("#packman").css("transform", "translate(" + $(".swiper-pagination-bullet-active").position().left + "px, calc(" + $(".swiper-container2").height() + "px))");
+		});
+		
+		swiper2.on('onSlidePrevStart', function () {
+            $("#topMouth").css("animation", "pacmanTopFramesBis 0.12s linear 8 alternate both");
+            $("#bottomMouth").css("animation", "pacmanBottomFramesBis 0.12s linear 8 alternate both");
+            $("#packman").css("transform", "translate(" + $(".swiper-pagination-bullet-active").position().left + "px, calc(" + $(".swiper-container2").height() + "px))");
+		});
+		
+		$("#topMouth").bind('oanimationend animationend webkitAnimationEnd', function() { 
+		   $("#topMouth").css("animation", ""); 
+		});
+		
+		$("#bottomMouth").bind('oanimationend animationend webkitAnimationEnd', function() { 
+		   $("#bottomMouth").css("animation", ""); 
+		});
     });
 
     $(".menu-nav-mobile select").change(function (){
