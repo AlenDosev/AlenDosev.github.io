@@ -1,0 +1,141 @@
+/* Large Screen */
+@media screen and (min-width: 1441px){
+    .main-content{
+        width: 1224px;
+    }
+
+    .menu-nav-mobile{
+        display: none;
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 1041px) and (max-width: 1440px) {
+    .main-content{
+        width: 1224px;
+    }
+
+    .menu-nav-mobile{
+        display: none;
+    }
+}
+
+/* Small Screen */
+@media screen and (min-width: 801px) and (max-width: 1040px) {
+    .main-content{
+        width: 100%;
+    }
+
+    .menu-nav-mobile{
+        display: none;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 461px) and (max-width: 800px){
+   .main-content{
+        width: 100%;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
+
+    .lunch {
+        text-align: start;
+        padding: 15px 0px;
+    }
+
+    .lunch > div {
+        padding: 5px;
+    }
+
+    .lunch-row{
+        padding: 0px 5px;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+
+    .menu-content {
+        padding: 0px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        background: #7F1722;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 460px) {
+    .main-content{
+        width: 100%;
+    }
+
+    .nav-item {
+        padding: 5px;
+    }
+
+    .location-container{
+        padding: 15px;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
+
+    .about-text span{
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
+    .lunch {
+        text-align: start;
+        padding: 15px 0px;
+    }
+
+    .lunch > div {
+        padding: 5px;
+    }
+
+    .menu-content {
+        padding: 0px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        background: #7F1722;
+    }
+
+    .lunch-row{
+        padding: 0px 5px;
+    }
+
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 376px) {
+   .main-content{
+        width: 100%;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 321px) {
+    .main-content{
+        width: 100%;
+    }
+
+    .menu-nav, .pointer{
+        display: none;
+    }
+}
