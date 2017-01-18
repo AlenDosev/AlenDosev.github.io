@@ -1,6 +1,8 @@
 var swiper = null;
 
 $(document).ready(function(){
+    $(".loading").hide();
+    $(".main-content").show();
     swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 1,
@@ -105,8 +107,7 @@ $(document).ready(function(){
     }
 
     $(".logo > div").css('opacity','1');
-    $(".loading").hide();
-    $(".main-content").show();
+    
     fixSquareHeight();
     move(0);
 
