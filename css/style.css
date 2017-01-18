@@ -14,12 +14,14 @@ body{
     display: flex;
     justify-content: center;
     padding: 0px !important;
+    min-height: 100vh;
 }
 
 .main-content{  
     box-shadow: 0 2px 7px #888888;
     background: #21201E;
     padding: 0px; 
+    display: none;
 }
 
 .nav{
@@ -439,6 +441,20 @@ body{
     border-bottom-right-radius: 10px; 
     background: white; 
     top: 10px;
+}
+
+.loading{
+    text-align: center;
+}
+
+.loading span{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.loading img{
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 @keyframes pacmanTopFrames {

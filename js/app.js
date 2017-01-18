@@ -105,7 +105,8 @@ $(document).ready(function(){
     }
 
     $(".logo > div").css('opacity','1');
-
+    $(".loading").hide();
+    $(".main-content").show();
     fixSquareHeight();
     move(0);
 
