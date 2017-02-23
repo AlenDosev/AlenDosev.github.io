@@ -44,9 +44,9 @@ body{
 }
 
 .content-test-image{
-    background: url('../img/main.jpg');
+    background: url('../img/food.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: top left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,14 +108,18 @@ body{
 .content-box-2 > div, .content-test-image > div{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #f8f6f1;;
+    color: #21201E;;
     border-right: 1px;
 }
 
 .menu{
     text-align: center;
-    color: #f8f6f1;;
-    padding: 20px 0px;
+    color: black;
+    padding: 40px 0px;
+}
+
+.menu > h1{
+    margin-top: 0px;
 }
 
 .menu-nav{
@@ -180,16 +184,15 @@ body{
     height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent; 
-    border-bottom: 20px solid #7F1722;
+    border-bottom: 20px solid #21201E;
     transition: margin-left 0.7s;
     width: 40px;
 }
 
 .menu-content{
     padding: 0px;
-    width: calc(100% - 40px);
+    width: 100%;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
 .swiper-slide{
@@ -197,7 +200,7 @@ body{
 }
 
 .card {
-    background: #f8f6f1;
+    background: white;
     border-radius: 2px;
     display: inline-block;
     padding: 10px;
@@ -293,13 +296,12 @@ body{
 
 .location-container{
     padding: 30px;
-    background: #f8f6f1;
+    background: white;
     color: #161513;
     text-align: center;
 }
 
 .location{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
     margin-top: 20px;
     color : black;
@@ -308,8 +310,7 @@ body{
 }
 
 .location-open{
-    background: #21201E;
-    color: #FFFFFF;
+    color: #161513;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,9 +328,8 @@ body{
 
 .location-open-row{
     text-align: left;
-    border-bottom: solid thin #f8f6f1;
+    border-bottom: solid thin #161513;
     padding: 20px 10px;
-    color: #f8f6f1;
     font-size: 17px;
 }
 
@@ -409,11 +409,15 @@ body{
 
 .about{
     color: #f8f6f1;;
-    padding: 50px;
+    padding: 80px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.about h1{
+    margin-top: 0px;
 }
 
 .about h1{
@@ -424,15 +428,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about-text span{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
 }
 
 .swiper-pagination-bullet{

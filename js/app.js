@@ -2,7 +2,7 @@ var swiper = null;
 
 $(document).ready(function(){
     $(".loading").hide();
-    $(".main-content").show();
+    $(".main-width").show();
     $(".test-header").css('height', ($(".test-header").width() * 0.33) + 'px');
     $(".test-header2").css('height', ($(".test-header").width() * 0.33) + 'px');
     swiper = new Swiper('.swiper-container', {
@@ -131,7 +131,7 @@ function goTo(place){
 }
 
 function fixSquareHeight() {
-    var windowWidth = $(".main-content").width();
+    var windowWidth = $(".main-width").width();
 
     if (windowWidth < 460) {
         $(".square").css('min-height', windowWidth + 'px');
