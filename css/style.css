@@ -1,16 +1,63 @@
 body{
-    background-image: url(../img/bgOverlay.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center center;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 16px;
     padding-right: 0px !important;
 }
 
+.test-header{
+    background: url('../img/main-background.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-header > img{
+    position: relative;
+    z-index: 5;
+    transition: opacity 3s;
+    opacity: 0;
+}
+
+.test-header2{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.content-test{
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 0px;
+}
+
+.content-test-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-test-image{
+    background: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-width{
+    margin: auto;
+}
+
 .main{
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) );
     display: flex;
     justify-content: center;
     padding: 0px !important;
@@ -31,6 +78,9 @@ body{
     height: 50px;
     position: absolute;
     z-index: 10;
+    top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav-item{
@@ -44,23 +94,6 @@ body{
     color: #f8f6f1;;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background: #7F1722;  
-}
-
-.logo > div{
-    transition: opacity 3s;
-    opacity: 0;  
-}
-
-.logo > div > img{
-    padding: 40px;
-    width: 100%;
-}
-
 .content-box-2{
     background-image: url('../img/main2.jpg');
     background-repeat: no-repeat;
@@ -72,7 +105,7 @@ body{
     text-align: center;
 }
 
-.content-box-2 > div{
+.content-box-2 > div, .content-test-image > div{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #f8f6f1;;
@@ -157,11 +190,9 @@ body{
     width: calc(100% - 40px);
     margin-top: 20px;
     margin-left: 20px;
-    background: #7F1722;
 }
 
 .swiper-slide{
-    background: #7F1722;
     height: 100%;
 }
 

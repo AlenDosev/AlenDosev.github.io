@@ -3,6 +3,8 @@ var swiper = null;
 $(document).ready(function(){
     $(".loading").hide();
     $(".main-content").show();
+    $(".test-header").css('height', ($(".test-header").width() * 0.33) + 'px');
+    $(".test-header2").css('height', ($(".test-header").width() * 0.33) + 'px');
     swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 1,
@@ -106,7 +108,7 @@ $(document).ready(function(){
         $(".bigger .card").css('height', (cardWidth * 0.6) + 'px');
     }
 
-    $(".logo > div").css('opacity','1');
+    $(".test-header > img").css('opacity','1');
     
     fixSquareHeight();
     move(0);
