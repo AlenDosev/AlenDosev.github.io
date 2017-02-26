@@ -22,7 +22,7 @@
 
 /* Small Screen */
 @media screen and (min-width: 801px) and (max-width: 1040px) {
-    .main-content, .main-width{
+    .main-content{
         width: 100%;
     }
 
@@ -37,8 +37,33 @@
 
 /* Tablet */
 @media screen and (min-width: 461px) and (max-width: 800px){
-   .main-content, .main-width{
+   .main-content{
         width: 100%;
+        padding: 0px;
+    }
+
+    .content-box{
+        margin: 0px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .location{
+        margin-top: 0px;
+    }
+
+    .location-open{
+        padding-left: 0px;
+    }
+
+    .location-open-row{
+        padding: 10px;
     }
 
     .menu-nav, .pointer{
@@ -67,7 +92,6 @@
         width: 100%;
         margin-top: 10px;
         margin-left: 0px;
-        background: #7F1722;
     }
 
     .location-container{
@@ -78,8 +102,23 @@
 
 /* Phone */
 @media screen and (max-width: 460px) {
-    .main-content, .main-width{
+    .main-content{
         width: 100%;
+        padding: 0px;
+    }
+
+    .content-box{
+        margin: 0px;
+    }
+
+    .nav{
+        top: 0px;
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    .header > img{
+        width: 50%;
     }
 
     .nav-item {
@@ -114,7 +153,6 @@
         width: 100%;
         margin-top: 10px;
         margin-left: 0px;
-        background: #7F1722;
     }
 
     .lunch-row{

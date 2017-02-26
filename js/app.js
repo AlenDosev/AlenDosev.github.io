@@ -4,8 +4,15 @@ $(document).ready(function(){
     $(".loading").hide();
     $(".header").css('display', 'flex');
     $(".main-container").css('display', 'flex');
-    $(".header").css('height', ($(".header").width() * 0.33) + 'px');
-    $(".header2").css('height', ($(".header").width() * 0.33) + 'px');
+    if($(window).width() > 769){
+        $(".header").css('height', ($(".header").width() * 0.33) + 'px');
+    }
+    else if($(window).width() > 461){
+        $(".header").css('height', ($(".header").width() * 0.5) + 'px');
+    }
+    else{
+        $(".header").css('height', ($(".header").width() * 0.8) + 'px');
+    }
     swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 1,
@@ -113,6 +120,10 @@ $(document).ready(function(){
     
     fixSquareHeight();
     move(0);
+    if($( window ).width() < 769){
+        $(".location-map").css('min-height', $(".location-open").height() + 'px');
+    }
+    
 
     if($( window ).width() < 900){
         $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
