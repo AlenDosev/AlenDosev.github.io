@@ -2,9 +2,10 @@ var swiper = null;
 
 $(document).ready(function(){
     $(".loading").hide();
-    $(".main-width").show();
-    $(".test-header").css('height', ($(".test-header").width() * 0.33) + 'px');
-    $(".test-header2").css('height', ($(".test-header").width() * 0.33) + 'px');
+    $(".header").css('display', 'flex');
+    $(".main-container").css('display', 'flex');
+    $(".header").css('height', ($(".header").width() * 0.33) + 'px');
+    $(".header2").css('height', ($(".header").width() * 0.33) + 'px');
     swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             slidesPerView: 1,
@@ -108,7 +109,7 @@ $(document).ready(function(){
         $(".bigger .card").css('height', (cardWidth * 0.6) + 'px');
     }
 
-    $(".test-header > img").css('opacity','1');
+    $(".header > img").css('opacity','1');
     
     fixSquareHeight();
     move(0);
@@ -131,7 +132,7 @@ function goTo(place){
 }
 
 function fixSquareHeight() {
-    var windowWidth = $(".main-width").width();
+    var windowWidth = $(".main-content").width();
 
     if (windowWidth < 460) {
         $(".square").css('min-height', windowWidth + 'px');
