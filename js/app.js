@@ -150,11 +150,13 @@ function move(item){
     swiper.slideTo(item, 500);  
 }
 
-function goTo(place){
+function goTo(place, mobile){
     $("html, body").animate({ scrollTop: $("#" + place).offset().top }, "slow");
-    $(".nav-mobile i").toggleClass("fa-bars");
-    $(".nav-mobile i").toggleClass("fa-times");
-    $(".nav-items-mobile").slideToggle(5);
+    if(mobile){
+        $(".nav-mobile i").toggleClass("fa-bars");
+        $(".nav-mobile i").toggleClass("fa-times");
+        $(".nav-items-mobile").slideToggle(5);
+    }  
 }
 
 function fixSquareHeight() {

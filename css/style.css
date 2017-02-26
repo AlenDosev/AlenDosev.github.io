@@ -46,6 +46,14 @@ body{
     color: white;;
 }
 
+.nav-mobile{
+    display: none;
+}
+
+.nav-items-mobile{
+    display: none;
+}
+
 /* Header End*/
 
 /* Sharred Start */
