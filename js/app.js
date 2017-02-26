@@ -3,7 +3,7 @@ var swiper = null;
 $(document).ready(function(){
     $(".loading").hide();
 
-    if($(window).width > 460){
+    if($(window).width() > 460){
         $(".header").css('display', 'flex');
     }
     else{
@@ -136,10 +136,11 @@ $(document).ready(function(){
         $(".location-map").css('min-height', $(".location-open").height() + 'px');
     }
     
-
     if($( window ).width() < 900){
         $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
     }
+
+    $(".swiper-slide > img").height($(window).height() - 150);
 });
 
 function move(item){

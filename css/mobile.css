@@ -171,7 +171,7 @@
     .nav-items-mobile{
         display: none;
         color: white;
-        padding: 0px 6px;
+        padding: 0px 7px;
     }
 
     .nav-item-mobile{
@@ -181,6 +181,11 @@
 
     .nav{
         display: none;
+    }
+
+    
+    .offer-text{
+        font-size: 18px;
     }
 
 }
