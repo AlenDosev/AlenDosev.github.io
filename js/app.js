@@ -2,7 +2,14 @@ var swiper = null;
 
 $(document).ready(function(){
     $(".loading").hide();
-    $(".header").css('display', 'flex');
+
+    if($(window).width > 460){
+        $(".header").css('display', 'flex');
+    }
+    else{
+        $(".header").show();
+    }
+    
     $(".main-container").css('display', 'flex');
     if($(window).width() > 769){
         $(".header").css('height', ($(".header").width() * 0.33) + 'px');
@@ -39,8 +46,7 @@ $(document).ready(function(){
             $(".menu-content").css('height', $(".swiper-slide-active").height() + 'px');
         }   
     });
-		
-   
+		 
     $('#myModal').on('shown.bs.modal', function () {
         swiper2 = new Swiper('.swiper-container2', {
             pagination: '.swiper-pagination',
@@ -95,6 +101,12 @@ $(document).ready(function(){
         }
     });
 
+    $(".nav-mobile i").click(function (){
+        $(this).toggleClass("fa-bars");
+        $(this).toggleClass("fa-times")
+        $(".nav-items-mobile").slideToggle(500);
+    });
+
     var cardWidth = $(".card").width() + 20;
     if($( window ).width() > 1399){
         $(".card").css('height', (cardWidth * 0.8) + 'px');
@@ -134,12 +146,15 @@ function move(item){
     var leftPostion = $(".menu-nav-item:nth(" + item + ")").position().left;
     var itemWidth = $(".menu-nav-item:nth(" + item + ")").width() + 24;
 
-    $("#circle").css('margin-left', ((leftPostion + (itemWidth/2)) - 20) + 'px');
+    $("#circle").css('margin-left', ((leftPostion + (itemWidth/2)) - 32) + 'px');
     swiper.slideTo(item, 500);  
 }
 
 function goTo(place){
     $("html, body").animate({ scrollTop: $("#" + place).offset().top }, "slow");
+    $(".nav-mobile i").toggleClass("fa-bars");
+    $(".nav-mobile i").toggleClass("fa-times");
+    $(".nav-items-mobile").slideToggle(5);
 }
 
 function fixSquareHeight() {

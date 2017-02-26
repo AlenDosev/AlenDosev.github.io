@@ -159,6 +159,30 @@
         padding: 0px 5px;
     }
 
+    .nav-mobile{
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .nav-items-mobile{
+        display: none;
+        color: white;
+        padding: 0px 6px;
+    }
+
+    .nav-item-mobile{
+        padding: 5px 15px;
+        text-align: right;
+    }
+
+    .nav{
+        display: none;
+    }
+
 }
 
 /* Mobile M */
