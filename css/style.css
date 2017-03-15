@@ -124,6 +124,10 @@ body{
     background-position: top left;
 }
 
+#delivery .offer-text{
+    padding: 0px 40px;
+}
+
 .offer-delivery{
     background-position: top right;
 }
@@ -416,21 +420,26 @@ body{
     background: #21201E;
 }
 
-.modal-content button{
+.modal-content i{
     opacity: 0.8;
 }
 
-.modal-content button:hover{
+.modal-content i:hover{
     opacity: 1;
 }
 
-.modal-content button i{
+.modal-content i{
     width: 35px;
     height: 35px;
-    color: white;;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .modal.in .modal-dialog{
@@ -443,9 +452,14 @@ body{
     position: absolute;
 }
 
+.menu-content .swiper-slide{
+    padding-bottom: 0px;
+}
+
 .swiper-slide{
     padding-bottom: 20px;
 }
+
 .swiper-container2 .swiper-slide {
     text-align: center;
     font-size: 18px;

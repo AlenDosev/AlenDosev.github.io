@@ -188,6 +188,25 @@
         font-size: 18px;
     }
 
+    .header > img{
+        display: none;
+    }
+
+    .modal-dialog {
+        width: 96%;
+        height: 96%;
+        margin: 2% auto;
+        border-right: 3px;
+    }
+
+    .swiper-pagination{
+        display: none;
+    }
+
+    #packman{
+        display: none;
+    }
+
 }
 
 /* Mobile M */

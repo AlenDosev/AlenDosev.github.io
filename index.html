@@ -6,25 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/logo-ico.png" type="image/x-icon" />
 
-        <!-- Scripts -->
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/swiper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/app.js"></script>
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/swiper.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/mobile.css">
-
-        <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400' rel='stylesheet' type='text/css'>
-
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NJPGBP2');</script>
+        <!-- End Google Tag Manager -->
+      
     </head>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-92604386-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJPGBP2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <div class="header col-xs-12">
             <div class="nav col-xs-12">
                 <div class="nav-item" onclick="goTo('menu')">
@@ -110,9 +116,12 @@
                             <span>Jūros Gėrybių</span>
                         </div>
                         <div class="menu-nav-item" onclick="move(10)">
-                            <span>Kiti</span>
+                            <span>Ryžiai</span>
                         </div>
                         <div class="menu-nav-item" onclick="move(11)">
+                            <span>Kiti</span>
+                        </div>
+                        <div class="menu-nav-item" onclick="move(12)">
                             <span>Desertai</span>
                         </div>
                     </div>
@@ -128,8 +137,9 @@
                             <option value="7">Antienos</option>
                             <option value="8">Žuvies</option>
                             <option value="9">Jūros Gėrybių</option>
-                            <option value="10">Kiti</option>
-                            <option value="11">Desertai</option>
+                            <option value="10">Ryžiai</option>
+                            <option value="11">Kiti</option>
+                            <option value="12">Desertai</option>
                         </select>
                     </div>
                     <div class="pointer col-xs-12">
@@ -355,10 +365,13 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-1</span>
-                                                    <h3>SALDŽIARŪGŠTĖ VIŠTIENOS</h3>
-                                                    <span class="meal-items">vištienos filė / balti grybai / agurkai</span><br />
+                                                    <h3>ŠVELNI DARŽOVIŲ</h3>
+                                                    <span class="meal-items">
+                                                        morkos / agurkai / pekino kopūstas / pomidorai /
+                                                        xiangu grybai / bambukas / sojų makaronai
+                                                    </span><br />
                                                     <div class="meal-cost">
-                                                        <span>2,20 €</span>
+                                                        <span>1,60 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -367,10 +380,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-2</span>
-                                                    <h3>ŠVELNI DARŽOVIŲ</h3>
-                                                    <span>morkos / agurkai / paprika / pomidorai / cukinija</span><br />
+                                                    <h3>TAIVANO SALDŽIARŪGŠTĖ</h3>
+                                                    <span>juodi grybai / pomidorai / bambukas / kiaušinis</span><br />
                                                     <div class="meal-cost">
-                                                        <span>1,60 €</span>
+                                                        <span>1,80 €</span>
                                                     </div>
                                                 </div> 
                                             </div> 
@@ -379,10 +392,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-3</span>
-                                                    <h3>ANTIENOS</h3>
-                                                    <span>antienos krūtinėlė / pekino kopūstas / agurkai</span><br />
+                                                    <h3>ČILI VIŠTIENOS</h3>
+                                                    <span>vištiena / morkos / čili pipirai</span><br />
                                                     <div class="meal-cost">
-                                                        <span>2,70 €</span>
+                                                        <span>2,00 €</span>
                                                     </div>
                                                 </div> 
                                             </div>
@@ -391,10 +404,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-4</span>
-                                                    <h3>SALDŽIAAŠTRĖ LAŠIŠOS</h3>
-                                                    <span>lašišos filė / pomidorai / agurkai</span><br />
+                                                    <h3>VIŠTIENOS SALDŽIAAŠTRĖ</h3>
+                                                    <span>vištiena / balti grybai / agurkai</span><br />
                                                     <div class="meal-cost">
-                                                        <span>2,90 €</span>
+                                                        <span>2,20 €</span>
                                                     </div>
                                                 </div> 
                                             </div>
@@ -403,10 +416,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-5</span>
-                                                    <h3>JŪROS GĖRYBIŲ</h3>
-                                                    <span>jūros gėrybės / agurkai</span><br />
+                                                    <h3>VIŠTIENOS, KEVEČIŲ IR KRABŲ</h3>
+                                                    <span>vištiena / krevetės / krabų lazdelės</span><br />
                                                     <div class="meal-cost">
-                                                        <span>3,80 €</span>
+                                                        <span>2,20 €</span>
                                                     </div>
                                                 </div> 
                                             </div> 
@@ -415,10 +428,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>1-6</span>
-                                                    <h3>TAIVANO SALDŽIAAŠTRĖ</h3>
-                                                    <span>kalmarai / vištienos filė / paprika / agurkai</span><br />
+                                                    <h3>KALMARŲ SALDŽIAAŠTRĖ</h3>
+                                                    <span>kalmarai / vištiena / paprika / agurkai</span><br />
                                                     <div class="meal-cost">
-                                                        <span>2,30 €</span>
+                                                        <span>2,50 €</span>
                                                     </div>
                                                 </div> 
                                             </div> 
@@ -426,11 +439,11 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>1-9</span>
-                                                    <h3>WAKAME</h3>
-                                                    <span>agurkai / jūros gėrybių asorti</span><br />
+                                                    <span>1-7</span>
+                                                    <h3>TOM JUM</h3>
+                                                    <span>kiauliena / krevetės / bambukas / juodi grybai / pievagrybiai</span><br />
                                                     <div class="meal-cost">
-                                                        <span>2,90 €</span>
+                                                        <span>2,50 €</span>
                                                     </div>
                                                 </div> 
                                             </div>
@@ -438,15 +451,63 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
+                                                    <span>1-8</span>
+                                                    <h3>ANTIENOS</h3>
+                                                    <span>antiena / pekino kopūstas / agurkai</span><br />
+                                                    <div class="meal-cost">
+                                                        <span>2,70 €</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>1-9</span>
+                                                    <h3>JŪROS GĖRYBIŲ</h3>
+                                                    <span>jūros gėrybės / agurkai</span><br />
+                                                    <div class="meal-cost">
+                                                        <span>3,00 €</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
                                                     <span>1-10</span>
-                                                    <h3>TOM JUM</h3>
-                                                    <span>krevetės / cukinija / sojų makaronai / špinatai</span><br />
+                                                    <h3>TRIJŲ ŽUVŲ</h3>
+                                                    <span>karpis / lašiša / kalmarai / bambukas / juodi gr ybai / pievagr ybiai</span><br />
+                                                    <div class="meal-cost">
+                                                        <span>3,50 €</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>1-11</span>
+                                                    <h3>WAKAME</h3>
+                                                    <span>jūros gėrybės / agurkai / wakame</span><br />
                                                     <div class="meal-cost">
                                                         <span>2,50 €</span>
                                                     </div>
                                                 </div> 
                                             </div>
-                                        </div>                                                                    
+                                        </div>  
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>1-12</span>
+                                                    <h3>LAŠIŠOS SALDŽIAAŠTRĖ</h3>
+                                                    <span>lašiša / pomidorai / agurkai</span><br />
+                                                    <div class="meal-cost">
+                                                        <span>2,90 €</span>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>                                                                      
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -455,13 +516,13 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-1</span>
-                                                    <h3>SALDŽIAAŠTRĖS PEKINO</h3>
+                                                    <h3>"KINIŠKOS" SALDŽIAAŠTRĖS</h3>
                                                     <span class="meal-items">
-                                                        pekino kopūstas / agurkai / morkos / juodieji grybai / 
-                                                        žemės riešutai / sojų makaronai
+                                                        pekino kopūstas / agurkai / morkos / juodi grybai /
+                                                        sojų makaronai / krevetės / sezamas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>4,20 €</span>
+                                                        <span>4,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -470,10 +531,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-2</span>
-                                                    <h3>SHANGHAI</h3>
+                                                    <h3>"PEKINO" SALDŽIAAŠTRĖS</h3>
                                                     <span class="meal-items">
-                                                        morkos / agurkai / mirkyti sojų makaronai / 
-                                                        balti ir juodi grybai / krevetės
+                                                        vištiena / pekino kopūstas / agurkai / morkos /
+                                                        juodi grybai / sojų makaronai / žemės riešutai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>4,20 €</span>
@@ -485,9 +546,9 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-3</span>
-                                                    <h3>AŠTRIOS KEPTOS KALMARŲ</h3>
+                                                    <h3>"SHANGHAJAUS"</h3>
                                                     <span class="meal-items">
-                                                        kalmarai / morkos / paprika / porai / imbieras / česnakas / salieras
+                                                        morkos / agurkai / balti grybai / juodi grybai / krevetės / pomidorai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>5,50 €</span>
@@ -499,12 +560,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-4</span>
-                                                    <h3>JŪROS GĖRYBIŲ</h3>
+                                                    <h3>"SITHUAN"</h3>
                                                     <span class="meal-items">
-                                                        jūros gėrybės / agurkai / aisbergo salotos / pomidorai / sezamas
+                                                        vištiena / agurkai / paprika / morkos / juodi grybai / poras / žemės riešutai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,50 €</span>
+                                                        <span>4,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -513,10 +574,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-5</span>
-                                                    <h3>AŠTRIOS VIŠTŲ SKRANDUKŲ</h3>
-                                                    <span class="meal-items">vištų skrandukai / agurkai / morkos / sojų padažas</span><br />
+                                                    <h3>VIŠTŲ SKRANDUKŲ (AŠTRIOS)</h3>
+                                                    <span class="meal-items">vištų skrandukai / agurkai / morkos</span><br />
                                                     <div class="meal-cost">
-                                                        <span>4,30 €</span>
+                                                        <span>4,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -525,13 +586,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-6</span>
-                                                    <h3>KINIŠKOS NAMINĖS</h3>
+                                                    <h3>"DRAKONO" SALDŽIAAŠTRĖS</h3>
                                                     <span class="meal-items">
-                                                        baltagūžiai kopūstai / morkos / agurkai / 
-                                                        pomidorai / sezamo sėklos
+                                                        bulvės / morkos / sojos makaronai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>3,60 €</span>
+                                                        <span>3,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -540,13 +600,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-7</span>
-                                                    <h3>WAKAME</h3>
+                                                    <h3>JŪROS GĖRYBIŲ</h3>
                                                     <span class="meal-items">
-                                                        saldžioji geltona paprika / raudona paprika /
-                                                        wakame kopūstas
+                                                        jūros gėrybės / morkos / agurkai / aisbergas / paprika
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>4,30 €</span>
+                                                        <span>6,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -555,10 +614,10 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-8</span>
-                                                    <h3>AŠTRIOS LIEŽUVIO SALOTOS</h3>
-                                                    <span class="meal-items">morkos / agurkai / kiaulienos liežuvis</span><br />
+                                                    <h3>KALMARŲ (AŠTRIOS)</h3>
+                                                    <span class="meal-items">kalmarai / morkos / paprika / poras / česnakas / imbieras</span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,50 €</span>
+                                                        <span>6,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -567,14 +626,29 @@
                                             <div class="card">
                                                 <div>
                                                     <span>2-9</span>
-                                                    <h3>AŠTRIOS SALOTOS SU RIEŠUTŲ SVIESTO PADAŽU</h3>
-                                                    <span class="meal-items">sojų makaronai / agurkas / paprika / riešutai</span><br />
+                                                    <h3>ŠONKAULIUKŲ SALDŽIAAŠTRĖS</h3>
+                                                    <span class="meal-items">šonkauliai / agurkai / pomidoras</span><br />
                                                     <div class="meal-cost">
                                                         <span>5,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
-                                        </div>   
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>2-10</span>
+                                                    <h3>"KINŲ" NAMINĖS</h3>
+                                                    <span class="meal-items">
+                                                        kopūstas / agurkai / morkos / pomidorai / juodi grybai /
+                                                        sojų makaronai / sezamas
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>3,80 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>     
                                     </div>
                                 </div>
                                 <div class="swiper-slide"> 
@@ -583,12 +657,13 @@
                                             <div class="card">
                                                 <div>
                                                     <span>3-1</span>
-                                                    <h3>TRAŠKŪS BAKLAŽANAI</h3>
+                                                    <h3>KEPTOS DARŽOVĖS ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        baklažanai / paprikos / morkos / svogūnai
+                                                        pekino kopūstas / morkos / juodi grybai / xianggu grybai / agurkai /
+                                                        pievagrybiai / brokoliai / kalafijorai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>4,60 €</span>
+                                                        <span>4,20 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -600,8 +675,8 @@
                                                     <span>3-2</span>
                                                     <h3>KEPTOS DARŽOVĖS SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        morkos / juodi ir balti grybai / bambukai / xianggu grybai /
-                                                        agurkai / pekino kopūstas / brokoliai / kalafioras
+                                                        pekino kopūstas / morkos / juodi grybai / xianggu grybai / pomidorai /
+                                                        agurkai / brokoliai / kalafijorai / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>4,20 €</span>
@@ -614,41 +689,9 @@
                                             <div class="card">
                                                 <div>
                                                     <span>3-3</span>
-                                                    <h3>TRAŠKŪS BAKLAŽANAI SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>TRAŠKIOS KEPTOS DARŽOVĖS</h3>
                                                     <span class="meal-items">
-                                                        baklažanai / morkos / juodi grybai / paprika
-                                                    </span><br />
-                                                    <div class="meal-cost">
-                                                        <span>5,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>3-4</span>
-                                                    <h3>KEPTOS BULVĖS SU DARŽOVĖMIS JUAN JU PADAŽU</h3>
-                                                    <span class="meal-items">
-                                                        bulvės / morkos / raudona paprika / česnakas / svogūnas /
-                                                        imbieras / juodi grybai
-                                                    </span><br />
-                                                    <div class="meal-cost">
-                                                        <span>4,20 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>3-5</span>
-                                                    <h3>KEPTOS DARŽOVĖS DŽIŪVĖSĖLIUOSE</h3>
-                                                    <span class="meal-items">
-                                                        paprikos / morkos / šparaginės pupelės / cukinija /
-                                                        pievagrybiai / baklažanai
+                                                        baklažanai / morkos / agurkai / paprika / pievagrybiai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>4,50 €</span>
@@ -660,10 +703,40 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>3-6</span>
-                                                    <h3>KEPTI ŽIEDINIAI KOPŪSTAI SU KREVETĖMIS</h3>
+                                                    <span>3-4</span>
+                                                    <h3>TRAŠKŪS BAKLAŽANAI ( SOJOS PADAŽE )</h3>
                                                     <span class="meal-items">
-                                                        krevetės / kalafijorai / brokoliai / paprika / juodi grybai
+                                                        baklažanai / morkos / paprika / poras
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>5,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>3-5</span>
+                                                    <h3>TRAŠKŪS BAKLAŽANAI (SALDŽIARŪGŠČIAME PADAŽE)</h3>
+                                                    <span class="meal-items">
+                                                        baklažanai / morkos / paprika / juodi grybai / poras
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>5,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>3-6</span>
+                                                    <h3>TRAŠKŪS BAKLAŽANAI ČILI PADAŽE</h3>
+                                                    <span class="meal-items">
+                                                        baklažanai / morkos / paprika / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>5,50 €</span>
@@ -680,12 +753,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>4-1</span>
-                                                    <h3>TRAŠKI VIŠTIENA GAUBAO</h3>
+                                                    <h3>TRAŠKI VIŠTIENA "GAUBAO"</h3>
                                                     <span class="meal-items">
                                                         vištienos filė / sezamo sėklos / saldus medaus padažas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,00 € / 8,00 €</span>
+                                                        <span>5,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -695,7 +768,7 @@
                                             <div class="card">
                                                 <div>
                                                     <span>4-2</span>
-                                                    <h3>VIŠTIENOS GABALĖLIAI VYŠNIA</h3>
+                                                    <h3>VIŠTIENOS GABALĖLIAI "VYŠNIA"</h3>
                                                     <span class="meal-items">
                                                         vištienos filė / raudonas salžiarūgštis padažas
                                                     </span><br />
@@ -710,12 +783,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>4-3</span>
-                                                    <h3>VIŠTIENA AŠTRIAME JUAN JU PADAŽE</h3>
+                                                    <h3>VIŠTIENA SU ČILI PIPIRAIS</h3>
                                                     <span class="meal-items">
-                                                        vištienos filė / pekino kopūstas / morkos / salieras / česnakas
+                                                        vištiena / čili pipirai / paprika / salieras
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,50 €</span>
+                                                        <span>5,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -727,10 +800,10 @@
                                                     <span>4-4</span>
                                                     <h3>VIŠTIENA SU XIANGGU GRYBAIS</h3>
                                                     <span class="meal-items">
-                                                        vištienos filė / morkos / pekino kopūstas / bambukas / xianggu grybai
+                                                        vištiena / morkos / paprika / bambukas / xianggu grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,60 € / 8,60 €</span>
+                                                        <span>5,00 € / 8,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -760,7 +833,7 @@
                                                         vištienos filė / morkos / salieras / pievagrybiai / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,70 €</span>
+                                                        <span>9,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -800,12 +873,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>4-9</span>
-                                                    <h3>ŽUVIES SKONIO VIŠTIENA</h3>
+                                                    <h3>VIŠTIENA ČESNAKINIAME SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        vištienos filė / morkos / paprika / juodi grybai
+                                                        vištiena / morkos / paprika / juodi grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,60 € / 8,60 €</span>
+                                                        <span>5,00 € / 8,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -845,12 +918,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>4-12</span>
-                                                    <h3>TRAŠKŪS SPARNELIAI SU SALOTOMIS</h3>
+                                                    <h3>KEPTI VIŠTIENOS SKRANDUKAI SU DARŽOVĖMIS ČILI PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        vištienos sparneliai / kopūstas / agurkai / morkos
+                                                        vištienos skrandukai / paprika / juodi grybai / morkos / salieras
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 €</span>
+                                                        <span>5,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -858,14 +931,14 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="square cards bigger col-xs-12">
+                                    <div class="square cards col-xs-12">
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
                                                     <span>5-1</span>
-                                                    <h3>KIAULIENA SALDŽIARŪGŠČIAME POMIDORŲ PADAŽE</h3>
+                                                    <h3>TRAŠKI KIAULIENA SU ANANASAIS</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos išpjova / agurkai / ananasai
+                                                        kiauliena / ananasai / žirneliai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>6,00 € / 8,00 €</span>
@@ -877,12 +950,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>5-2</span>
-                                                    <h3>AŠTRIAI KEPTA KIAULIENA</h3>
+                                                    <h3>AŠTRI KIAULIENA SU ČILI PADAŽU</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos kumpis / paprika / pekino kopūstai / salierų stiebai / morkos
+                                                        kiauliena / paprika / pekino kopūstas / salieras / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,90 € / 8,60 €</span>
+                                                        <span>5,50 € / 7,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -891,12 +964,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>5-3</span>
-                                                    <h3>KEPTA KIAULIENA SU ŽUVIES PRIESKONIAIS SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>KEPTA KIAULIENA SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos kumpis / morkos / paprika / juodi grybai
+                                                        kiauliena / paprika / juodi grybai / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,50 € / 8,50 €</span>
+                                                        <span>5,50 € / 7,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -905,12 +978,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>5-4</span>
-                                                    <h3>ŠONKAULIUKAI SALDŽIARŪGŠČIAME PADAŽE</h3>
+                                                    <h3>ŠONKAULIUKAI SALDŽIAAŠTRIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos šonkauliukai / agurkai / morkos / pomidorai
+                                                        šonkauliai / agurkai / pomidorai / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 8,00 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -921,10 +994,10 @@
                                                     <span>5-5</span>
                                                     <h3>ŠONKAULIUKAI SOJOS PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos šonkauliukai / agurkai / morkos / pekino kopūstai
+                                                        šonkauliai / morkos / pekino kopūstai / agurkai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 8,00 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -933,9 +1006,37 @@
                                             <div class="card">
                                                 <div>
                                                     <span>5-6</span>
-                                                    <h3>TRAŠKI KIAULIENA GAUBAO</h3>
+                                                    <h3>ŠONKAULIUKAI ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos gabalėliai / sezamo sėklos /medaus padažas
+                                                        šonkauliai / česnakas / sezamas
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>6,50 € / 8,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>5-7</span>
+                                                    <h3>KIAULIENA SU JŪROS GĖRYBĖMISKARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
+                                                    <span class="meal-items">
+                                                        kiauliena / jūros gėrybės / morkos / salieras / pievagrybiai / svogūnas
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>9,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>5-8</span>
+                                                    <h3>TRAŠKI KIAULIENA "GAU BAO"</h3>
+                                                    <span class="meal-items">
+                                                        kiauliena / sezamas
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>6,00 € / 8,00 €</span>
@@ -946,13 +1047,41 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>5-7</span>
-                                                    <h3>KIAULIENA KARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
+                                                    <span>5-9</span>
+                                                    <h3>TRAŠKI KIAULIENA SU DARŽOVĖMIS SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kiaulienos išpjova / morkos / salieras / pievagrybiai / svgūnai
+                                                        kiauliena / pomidorai / svogūnai / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>9,00 €</span>
+                                                        <span>6,00 € / 8,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>5-10</span>
+                                                    <h3>KIAULIENA SU MARINUOTAIS AGURKAIS</h3>
+                                                    <span class="meal-items">
+                                                        kiauliena / marinuoti agurkai / pievagrybiai / svogūnai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>6,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>5-11</span>
+                                                    <h3>KIAULIENOS GABALIUKAI SU KINIŠKU AŠTRIU PADAŽU</h3>
+                                                    <span class="meal-items">
+                                                        kiauliena / paprika / agurkai / poras
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>6,80 € / 8,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -965,12 +1094,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-1</span>
-                                                    <h3>ZIRAN SAUSAI KEPTA JAUTIENA SU KUMINU</h3>
+                                                    <h3>TRŠKI JAUTIENA "ZIRAN"</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / svogūnai / kuminas
+                                                        jautiena / ziran prieskoniai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 10,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -979,12 +1108,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-2</span>
-                                                    <h3>AŠTRIAI KEPTA JAUTIENA SU BAMBUKAIS</h3>
+                                                    <h3>JAUTIENA SU ČILI PIPIRAIS</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / bambukai
+                                                        jautiena / paprika / čili pipirai / salieras / bambukas / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 9,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -993,12 +1122,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-3</span>
-                                                    <h3>AŠTRIAI KEPTA JAUTIENA SU SALIERŲ STIEBAIS</h3>
+                                                    <h3>JAUTIENA SU PORU IR IMBIERU</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / salierų stiebai / morkos
+                                                        jautiena / paprika / imbieras / poras / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 9,00 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1007,12 +1136,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-4</span>
-                                                    <h3>KEPTA JAUTIENA SU ŽUVIES PRIESKONIAIS SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>JAUTIENA KARIO PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / juodieji grybai / morkos
+                                                        jautiena / paprika / juodi grybai / svogūnai / morkos / karis
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 9,50 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1021,12 +1150,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-5</span>
-                                                    <h3>JAUTIENA AUSTRIŲ PADAŽE</h3>
+                                                    <h3>JAUTIENA SU BROKOLIAIS ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / pekino kopūstas / svogūnai / morkos / bambukai
+                                                        jautiena / paprika / brokoliai / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 9,00 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1037,10 +1166,10 @@
                                                     <span>6-6</span>
                                                     <h3>JAUTIENA SU XIANGGU GRYBAIS</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / morkos / pekino kopūstas / xianggu grybai
+                                                        jautiena / paprika / bambukas / morkos / xianggu grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 10,00 €</span>
+                                                        <span>6,80 € / 8,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1049,12 +1178,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-7</span>
-                                                    <h3>TRŠKI PEKINO JAUTIENA</h3>
+                                                    <h3>TRAŠKI PEKINO JAUTIENA SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / agurkai
+                                                        jautiena / agurkai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 9,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1065,10 +1194,10 @@
                                                     <span>6-8</span>
                                                     <h3>JAUTIENA KARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / morkos / salieras / pievagrybiai / svogūnai
+                                                        jautiena / morkos / salieras / pievagrybiai / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>9,00 €</span>
+                                                        <span>10,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1077,12 +1206,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-9</span>
-                                                    <h3>JAUTIENOS IR BAKLAŽANŲ GABALĖLIAI SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>TRAŠKI JAUTIENA SU BAKLAŽANAIS SALDŽIAAŠTRIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / baklažanai / paprika
+                                                        jautiena / baklažanai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 9,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1091,9 +1220,9 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-10</span>
-                                                    <h3>JAUTIENA SU JŪROS GĖRYBĖMIS</h3>
+                                                    <h3>JAUTIENA SU KALMARAIS</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / jūros gėrybės / morkos / svogūnai / paprika
+                                                        jautiena / paprika / kalmarai / morkos / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>6,50 € / 9,50 €</span>
@@ -1105,9 +1234,9 @@
                                             <div class="card">
                                                 <div>
                                                     <span>6-11</span>
-                                                    <h3>JAUTIENA SU PORAIS</h3>
+                                                    <h3>SHUIZHU JAUTIENA SU DARŽOVĖMIS KINIŠKAME ČILI PADAŽE (LABAI AŠTRU)</h3>
                                                     <span class="meal-items">
-                                                        jautienos nugarinė / paprika / porai / pekino kopūstas / česnakas / moliuskų padažas
+                                                        jautiena / morkos / salieras / pekino kopūstas
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>9,50 €</span>
@@ -1123,12 +1252,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>7-1</span>
-                                                    <h3>TRŠKI ANTIENA SU PEKINO PADAŽU</h3>
+                                                    <h3>TRAŠKI PEKINO ANTIENA SU PADAŽU</h3>
                                                     <span class="meal-items">
-                                                        antienos krūtinėlė / porai
+                                                        antiena / poras
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>8,20 € / 12 €</span>
+                                                        <span>8,50 € / 12 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1137,12 +1266,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>7-2</span>
-                                                    <h3>ANTIENA SU XIANGGU GRYBAIS IR BAMBUKAIS</h3>
+                                                    <h3>ANTIENA SU XIANGGU GRYBAIS IR BAMBUKU</h3>
                                                     <span class="meal-items">
-                                                        antienos krūtinėlė / morkos / pekino kopūstas / bambukai / xianggu grybai
+                                                        antiena / pekino kopūstas / bambukas / morkos / xianggu grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,50 € / 12 €</span>
+                                                        <span>7,50 € / 11,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1151,12 +1280,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>7-3</span>
-                                                    <h3>ANTIENA SU ŽUVIES PRIESKONIAIS</h3>
+                                                    <h3>ANTIENA SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        antienos krūtinėlė / paprika / juodieji grybai / morkos
+                                                        antiena / paprika / morkos / juodi grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,50 € / 12 €</span>
+                                                        <span>7,50 € / 11,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1167,7 +1296,7 @@
                                                     <span>7-4</span>
                                                     <h3>ANTIENA KARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
                                                     <span class="meal-items">
-                                                        antienos krūtinėlė / morkos / salieras / pievagrybiai / svogūnas
+                                                        antiena / salieras / pievagrybiai / svogūnai / morkos
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>13,00 €</span>
@@ -1181,10 +1310,10 @@
                                                     <span>7-5</span>
                                                     <h3>TRAŠKI ANTIENA AŠTRIAME SOJOS PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        antienos krūtinėlė / paprika
+                                                        antiena / paprika
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,50 € / 12 €</span>
+                                                        <span>7,50 € / 12,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1197,7 +1326,7 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-1</span>
-                                                    <h3>KARPIS VOVERĖ SU DVIEM PADAŽAIS</h3>
+                                                    <h3>KARPIS "VOVERĖ" SU DVIEM PADAŽAIS</h3>
                                                     <span class="meal-items">
                                                         karpis / saldžiarūgštis padažas / aštrus padažas
                                                     </span><br />
@@ -1211,12 +1340,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-2</span>
-                                                    <h3>TRAŠKIOS KARPIO JUOSTELĖS SU SEZAMU</h3>
+                                                    <h3>TRAŠKIOS KARPIO JUOSTELĖS SU SEZAMU POMIDORŲ PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        karpis / sezamo sėklos / saldžiarūgštis padažas
+                                                        karpis / sezamas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 8,00 €</span>
+                                                        <span>6,50 € / 9,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1225,12 +1354,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-3</span>
-                                                    <h3>KEPTA JŪROS LYDEKA SU BAMBUKAIS IR XIANGGU GRYBAIS</h3>
+                                                    <h3>KARPIO JUOSTELĖS ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jūros lydekos filė / morkos / pekino kopūstas / bambukai / xianggu grybai
+                                                        karpis / česnskas / xianggu grybai / poras / imbieras
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 8,60 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1239,12 +1368,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-4</span>
-                                                    <h3>KEPTA LAŠIŠA SU DARŽOVĖMIS SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>TRAŠKUS KARPIS "GAUBAO"</h3>
                                                     <span class="meal-items">
-                                                        lašišos filė / morkos / paprika / juodi grybai
+                                                        karpis / sezamas / padažas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>8,00 € / 11,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1255,10 +1384,10 @@
                                                     <span>8-5</span>
                                                     <h3>KARPIS SU BAKLAŽANAIS SALDŽIAAŠTRIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        karpio filė / baklažanai / morkos / juodi grybai / balti grybai / paprika
+                                                        karpis / baklažanai / saldžiaaštris padažas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,80 € / 9,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1267,12 +1396,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-6</span>
-                                                    <h3>KARPIS HRIZANTEMA</h3>
+                                                    <h3>KARPIS SU KINIŠKOM NAMINĖM SALOTOM ČILI PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        karpis / saldžiarūgštis arba aštrus padažas
+                                                        karpis / agurkai / pekino kopūstas / morkos / poras / imbieras / česnakas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>13,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1281,12 +1410,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-7</span>
-                                                    <h3>AROMATINGA TRAŠKI LAŠIŠA</h3>
+                                                    <h3>JŪROS LYDEKA SU BAMBUKU IR XIANGGU GRYBAIS</h3>
                                                     <span class="meal-items">
-                                                        lašišos filė / saldžiarūgštis padažas / aštrus padažas
+                                                        lydeka / bambukas / pekino kopūstas / morkos / xianggu grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>8,00 € / 11,00 €</span>
+                                                        <span>6,50 € / 9,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1295,12 +1424,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-8</span>
-                                                    <h3>AŠTRI TRAŠKI MENKĖ SU ŽUVIES PRIESKONIAIS</h3>
+                                                    <h3>JŪROS LYDEKA SU PEKINO SALDŽIARŪGŠČIU PADAŽU</h3>
                                                     <span class="meal-items">
-                                                        menkės filė / morkos / juodi grybai / paprika
+                                                       lydeka / pomidorai / morkos / svogūnai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,00 € / 9,00 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1309,12 +1438,54 @@
                                             <div class="card">
                                                 <div>
                                                     <span>8-9</span>
-                                                    <h3>TRAŠKI MENKĖ SU SALOTOMIS</h3>
+                                                    <h3>JŪROS LYDEKA SU DARŽOVĖMIS</h3>
                                                     <span class="meal-items">
-                                                        menkės filė / kopūstai / agurkai / morkos
+                                                        lydeka / kopūstas / morkos / agurkai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>5,50 € / 7,50 €</span>
+                                                        <span>6,50 € / 8,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>8-10</span>
+                                                    <h3>TRAŠKI LAŠIŠA SU DVIEM PADAŽAIS</h3>
+                                                    <span class="meal-items">
+                                                        lašiša / du padažai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>8,00 € / 10,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>8-11</span>
+                                                    <h3>LAŠIŠA SU DARŽOVĖMIS SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <span class="meal-items">
+                                                        lašiša / paprika / morkos / juodi grybai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>8,00 € / 10,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>8-12</span>
+                                                    <h3>LAŠIŠA AŠTRIAME SOJOS PADAŽE</h3>
+                                                    <span class="meal-items">
+                                                        lašiša / paprika / morkos / svogūnai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>8,00 € / 10,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1327,12 +1498,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-1</span>
-                                                    <h3>KEPTI KALMARAI SU DARŽOVĖMIS</h3>
+                                                    <h3>KALMARAI SU BROKOLIAIS ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        kalmarai / morkos / juodi ir balti grybai / paprika / brokoliai
+                                                        kalmarai / brokoliai / morkos / juodi grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,50 € / 8,50 €</span>
+                                                        <span>6,80 € / 8,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1341,12 +1512,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-2</span>
-                                                    <h3>YPATINGOJE TEŠLOJE KEPTI KALMARŲ ŽIEDAI</h3>
+                                                    <h3>KALMARŲ ŽIEDAI SU DVIEM PADAŽAIS</h3>
                                                     <span class="meal-items">
-                                                        kalmarai / saldžiarūgštis padažas / aštrus padažas
+                                                        kalmarai / du padažai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 8,50 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1355,12 +1526,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-3</span>
-                                                    <h3>TRAŠKIOS JŪROS GĖRYBĖS</h3>
+                                                    <h3>KALMARAI SALDŽIAAŠTRIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jūros gėrybės / paprika / česnakas
+                                                        kalmarai / paprika / morkos / juodi grybai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,00 € / 10,00 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1369,12 +1540,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-4</span>
-                                                    <h3>JŪROS GĖRYBĖS KARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
+                                                    <h3>KALMARAI SU DARŽOVĖMIS ČILI PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        jūros gėrybės / morkos / salieras / pievagrybiai / svogūnas
+                                                        kalmarai / paprika / morkos / poras / juodi grybai / česnakas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>9,90 €</span>
+                                                        <span>6,80 € / 9,80 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1383,12 +1554,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-5</span>
-                                                    <h3>TRAŠKŪS KALMARAI SU DARŽOVĖMIS</h3>
+                                                    <h3>JŪROS GĖRYBĖS SU DARŽOVĖMIS</h3>
                                                     <span class="meal-items">
-                                                        kalmarai / morkos / paprika / salieras
+                                                        jūros gėrybės / paprika / morkos / agurkai / pievagrybiai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>6,00 € / 8,00 €</span>
+                                                        <span>7,00 € / 9,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1397,12 +1568,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-6</span>
-                                                    <h3>TIGRINĖS KREVETĖS SU KIAUTU KARŠTOJE METALINĖJE LĖKŠTĖJE</h3>
+                                                    <h3>JŪROS GĖRYBĖS ČILI PADŽE</h3>
                                                     <span class="meal-items">
-                                                        tigrinės krevetės / paprika / agurkai / poras
+                                                        jūros gėrybės / paprika / morkos / salieras / svogūnas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>12,00 €</span>
+                                                        <span>7,00 € / 9,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1411,12 +1582,12 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-7</span>
-                                                    <h3>AŠTRIOS KREVETĖS GONGBAO SU DARŽOVĖMIS IR RIEŠUTAIS</h3>
+                                                    <h3>KREVETĖS "GONGBAO" SU ŽEMĖS RIEŠUTAIS</h3>
                                                     <span class="meal-items">
-                                                        krevetės / paprika / morkos / žemės riešutai
+                                                       krevetės / paprika / morkos / žemės riešutai
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>7,00 € / 11,00 €</span>
+                                                        <span>8,00 € / 12,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1425,9 +1596,23 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-8</span>
-                                                    <h3>TIGRINĖS KREVETĖS SALDŽIARŪGŠČIAME RAUDONAJAME PADAŽE</h3>
+                                                    <h3>KREVETĖS SU BROKOLIAIS</h3>
                                                     <span class="meal-items">
-                                                        krevetės / žirneliai
+                                                        krevetės / brokoliai / morkos / žirneliai / kukurūzai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>8,00 € / 12,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>9-9</span>
+                                                    <h3>TRAŠKIOS KREVETĖS SU DVIEM PADAŽAIS</h3>
+                                                    <span class="meal-items">
+                                                        krevetės / du padažai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>7,50 € / 11,50 €</span>
@@ -1438,27 +1623,13 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>9-9</span>
-                                                    <h3>TRAŠKIOS MAŽOSIOS KREVETĖS</h3>
-                                                    <span class="meal-items">
-                                                        krevetės / saldžiarūgštis padažas
-                                                    </span><br />
-                                                    <div class="meal-cost">
-                                                        <span>7,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
                                                     <span>9-10</span>
-                                                    <h3>MAŽOSIOS KREVETĖS SU DARŽOVĖMIS SALDŽIAAŠTRIAME PADAŽE</h3>
+                                                    <h3>TRAŠKIOS TIGRINĖS KREVETĖS SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        krevetės / paprika / juodieji grybai / morkos
+                                                        tigrinės krevetės / bananas
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>8,00 € / 11,00 €</span>
+                                                        <span>12,00 € / 18,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1467,12 +1638,26 @@
                                             <div class="card">
                                                 <div>
                                                     <span>9-11</span>
-                                                    <h3>DŽIŪVESĖLIUOSE KEPTOS TIGRINĖS KREVETĖS</h3>
+                                                    <h3>TRAŠKIOS TIGRINĖS KREVETĖS ČESNAKINIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        tigrinės krevetės / paprika
+                                                        tigrinės krevetės / žirneliai / paprika
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>9,00 € / 14,00 €</span>
+                                                        <span>12,00 € / 18,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>9-12</span>
+                                                    <h3>TRAŠKIOS TIGRINĖS KREVETĖS SU DVIEM PADAŽAIS</h3>
+                                                    <span class="meal-items">
+                                                        tigrinės krevetės / du padažai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>12,00 € / 18,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1507,9 +1692,9 @@
                                             <div class="card">
                                                 <div>
                                                     <span>10-3</span>
-                                                    <h3>KEPTI RYŽIAI SU DARŽOVĖMIS</h3>
+                                                    <h3>KEPTI RYŽIAI SU KIAUŠINIU IR DARŽOVĖMIS</h3>
                                                     <span class="meal-items">
-                                                        ryžiai / morkos / žirneliai / kukurūzai / kiaušinis
+                                                        kiaušiniai / morkos / žirneliai / kukurūzai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>2,00 €</span>
@@ -1521,37 +1706,27 @@
                                             <div class="card">
                                                 <div>
                                                     <span>10-4</span>
-                                                    <h3>KEPTI RYŽIAI SU KREVETĖMIS</h3>
+                                                    <h3>KEPTI RYŽIAI SU KIAUŠINIU DARŽOVĖMIS IR KREVETĖMIS</h3>
                                                     <span class="meal-items">
-                                                        ryžiai / kiaušinis / morkos / žirneliai / kukurūzai / krevetės
+                                                        kiaušinis / krevetės / morkos / žirneliai / kukurūzai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>2,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
-                                        </div>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="square cards col-xs-12">
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>10-5</span>
-                                                    <h3>KEPTI RYŽIAI SU KALMARAIS</h3>
+                                                    <span>11-1</span>
+                                                    <h3>VIRTI KINIŠKI KOLDŪNAI ČESNSKINIAME SOJOS PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        ryžiai / kalmatai / juodi grybai / kiaušinis
-                                                    </span><br />
-                                                    <div class="meal-cost">
-                                                        <span>2,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>10-6</span>
-                                                    <h3>VIRTI KOLDŪNAI</h3>
-                                                    <span class="meal-items">
-                                                        koldūnai / česnakinis sojos padažas
+                                                        koldūnai / sojos padažas su česnaku
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>3,50 €</span>
@@ -1562,10 +1737,10 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>10-7</span>
-                                                    <h3>KEPTI KOLDŪNAI</h3>
+                                                    <span>11-2</span>
+                                                    <h3>KEPTI KINIŠKI KOLDŪNAI ČESNAKINIAME SOJOS PADAŽE</h3>
                                                     <span class="meal-items">
-                                                        koldūnai / česnakinis sojos padažas
+                                                        koldūnai / sojos padažas su česnaku
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>4,00 €</span>
@@ -1576,10 +1751,10 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>10-8</span>
+                                                    <span>11-3</span>
                                                     <h3>KINIŠKI MAKARONAI SU VIŠTIENA IR KREVETĖMIS</h3>
                                                     <span class="meal-items">
-                                                        makaronai / vištiena / krevetės / kopūstai / morkos / xianggu grybai / paprika
+                                                        makaronai / vištiena / krevetės / kopūstas / morkos / xianggu grybai /paprika
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>5,50 €</span>
@@ -1590,24 +1765,10 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>10-9</span>
-                                                    <h3>TRAŠKŪS BLYNELIAI SU DARŽOVĖMIS</h3>
+                                                    <span>11-4</span>
+                                                    <h3>KINIŠKI MAKARONAI SU JŪROS GĖRYBĖMIS</h3>
                                                     <span class="meal-items">
-                                                        morkos / kopūstai / saldžiarūgštis padažas
-                                                    </span><br />
-                                                    <div class="meal-cost">
-                                                        <span>3,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>10-10</span>
-                                                    <h3>JUAN JU MAKARONAI SU JŪROS GĖRYBĖMIS</h3>
-                                                    <span class="meal-items">
-                                                    makaronai / jūros gėrybės / kopūstas / morkos / xianggu grybai / paprika
+                                                        makaronai / jūros gėrybės / kopūstas / morkos / xianggu grybai / paprika
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>6,50 €</span>
@@ -1619,9 +1780,65 @@
                                             <div class="card">
                                                 <div>
                                                     <span>12-1</span>
-                                                    <h3>VIŠTIENA SU GRUZDINTOMIS BULVYTĖMIS</h3>
+                                                    <h3>KEPTI BLYNELIAI SU DARŽOVĖMIS</h3>
                                                     <span class="meal-items">
-                                                    vištiena / gruzdintos bulvytės / pomidoras / agurkas / pomidorų padažas
+                                                        morkos / sojos makaronai / svogunai / xianggu grybai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>3,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>12-2</span>
+                                                    <h3>KEPTI BLYNELIAI SU KIAULIENA</h3>
+                                                    <span class="meal-items">
+                                                        kiauliena / morkos / sojos makaronai / pievagrybiai
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>4,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>12-3</span>
+                                                    <h3>KEPTI BLYNELIAI SU BANANAIS</h3>
+                                                    <span class="meal-items">
+                                                        
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>4,20 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>12-4</span>
+                                                    <h3>KEPTI BANANAI SU MEDUM</h3>
+                                                    <span class="meal-items">
+                                                        
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>4,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>12-5</span>
+                                                    <h3>TRAŠKI VIŠTIENA SU GRUZINTOM BULVYTĖM</h3>
+                                                    <span class="meal-items">
+                                                        vištiena / bulvytės fri / pomioras / agurkas
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>5,00 €</span>
@@ -1632,13 +1849,13 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>12-2</span>
-                                                    <h3>TRAŠKI VIŠTIENA AZIJA</h3>
+                                                    <span>12-6</span>
+                                                    <h3>TRAŠKŪS VIŠTIENOS PIRŠTELIAI AZIJA SALDŽIARŪGŠČIAME PADAŽE</h3>
                                                     <span class="meal-items">
-                                                    traškūs vištienos piršteliai / saldžiarūgštis padažas
+                                                        
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>3,00 €</span>
+                                                        <span>3,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1650,8 +1867,8 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>11-1</span>
-                                                    <h3>KARAMELĖJE KEPTI SAUSAINIAI SU SEZAMU</h3>
+                                                    <span>13-1</span>
+                                                    <h3>KARAMELIZUOTI KINIŠKI SAUSAINIAI SU SEZAMU</h3>
                                                     <div class="meal-cost">
                                                         <span>5,50 €</span>
                                                     </div>
@@ -1661,68 +1878,13 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>11-2</span>
+                                                    <span>13-2</span>
                                                     <h3>KARAMELĖJE KEPTŲ VAISIŲ ASORTI</h3>
-                                                    <div class="meal-cost">
-                                                        <span>6,00 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>11-3</span>
-                                                    <h3>KARAMELĖJE KEPTI OBUOLIAI</h3>
-                                                    <div class="meal-cost">
-                                                        <span>6,00 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>11-4</span>
-                                                    <h3>DŽIUVESĖLIUOSE KEPTI BANANAI</h3>
-                                                    <div class="meal-cost">
-                                                        <span>4,20 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>11-5</span>
-                                                    <h3>KEPTI LEDAI</h3>
-                                                    <div class="meal-cost">
-                                                        <span>5,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>11-6</span>
-                                                    <h3>KARAMELĖJE KEPTOS BRAŠKĖS</h3>
-                                                    <div class="meal-cost">
-                                                        <span>5,50 €</span>
-                                                    </div>
-                                                </div>                                               
-                                            </div> 
-                                        </div>
-                                        <div class="col-md-3 col-sm-4 col-xs-12">
-                                            <div class="card">
-                                                <div>
-                                                    <span>11-7</span>
-                                                    <h3>PIENO IR LEDŲ KOKTEILIS</h3>
                                                     <span class="meal-items">
-                                                        kivi / bananų / braškių
+                                                        bananas / apelsinas / obuolys / braškės
                                                     </span><br />
                                                     <div class="meal-cost">
-                                                        <span>1,50 €</span>
+                                                        <span>6,00 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1730,10 +1892,24 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>11-8</span>
+                                                    <span>13-3</span>
+                                                    <h3>KEPTI LEDAI SU ŠOKOLADU IR GRIETINĖLE</h3>
+                                                    <span class="meal-items">
+                                                        dvi porcijos ledų / šokoladinis padažas / grietinėlė
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>5,50 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>13-4</span>
                                                     <h3>LEDAI</h3>
                                                     <span class="meal-items">
-                                                        vaniliniai / šokoladiniai / braškiniai
+                                                        braškiniai / vaniliniai / šokoladiniai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>1,50 €</span>
@@ -1744,13 +1920,27 @@
                                         <div class="col-md-3 col-sm-4 col-xs-12">
                                             <div class="card">
                                                 <div>
-                                                    <span>11-9</span>
+                                                    <span>13-5</span>
                                                     <h3>LEDAI SU VAISIAIS</h3>
                                                     <span class="meal-items">
-                                                        vaniliniai / šokoladiniai / braškiniai
+                                                        braškiniai / vaniliniai / šokoladiniai
                                                     </span><br />
                                                     <div class="meal-cost">
                                                         <span>2,00 €</span>
+                                                    </div>
+                                                </div>                                               
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                            <div class="card">
+                                                <div>
+                                                    <span>13-6</span>
+                                                    <h3>PIENO IR LEDŲ KOKTEILIS</h3>
+                                                    <span class="meal-items">
+                                                        braškinis / bananinis / kiwi / šokoladinis
+                                                    </span><br />
+                                                    <div class="meal-cost">
+                                                        <span>1,50 €</span>
                                                     </div>
                                                 </div>                                               
                                             </div> 
@@ -1765,6 +1955,7 @@
                     <div class="offer-img offer-delivery half-square col-sm-6 col-xs-12">                                   
                     </div> 
                     <div class="offer-text half-square col-sm-6 col-xs-12">    
+                        <h1>Maistas į namus</h1>
                         <p>
                             Užsakymus išsinešimui arba su pristatymu į Jūsų namus ar ofisą, priimame telefonu : <br/>
                             <b>8-612 20 215</b><br/>
@@ -1858,9 +2049,7 @@
             
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <i class="fa fa-times fa-lg" aria-hidden="true"></i>
-                    </button>
+                    <i class="fa fa-times fa-lg" aria-hidden="true" data-dismiss="modal"></i>
                     <div class="swiper-container2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1941,6 +2130,23 @@
                 </div>
             
             </div>
-        </div>                
-    </body>
+        </div>   
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400' rel='stylesheet' type='text/css'>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>             
+    </body>   
 </html>
