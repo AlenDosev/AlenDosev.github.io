@@ -181,5 +181,8 @@ function fixSquareHeight() {
         $(".square").css('min-height', (windowWidth / 2) + 'px');
         $(".half-square").css('min-height', ((windowWidth / 2) * 0.75) + 'px');
         $(".quarter-square").css('min-height', ((windowWidth / 2) * 0.5) + 'px');
+
+        $(".offer-text").css('min-height', ((windowWidth / 2) * 0.67) + 'px');
+        $(".offer-img").css('min-height', ((windowWidth / 2) * 0.67) + 'px');
     }  
 }

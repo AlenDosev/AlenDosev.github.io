@@ -113,9 +113,9 @@ body{
 }
 
 #offer .offer-img{
-    background: url('../img/special.jpg');
+    background: url('../img/8.jpg');
     background-size: cover;
-    background-position: top left;
+    background-position: center center;
 }
 
 #delivery .offer-img{
