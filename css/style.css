@@ -105,6 +105,10 @@ body{
     font-size: 21px;
 }
 
+.offer-text h2{
+    margin-top: 0px;
+}
+
 .offer-img{
     display: flex;
     justify-content: center;
@@ -113,7 +117,7 @@ body{
 }
 
 #offer .offer-img{
-    background: url('../img/8.jpg');
+    background: url('../img/7.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -298,6 +302,11 @@ body{
 .lunch-cost{
     text-align: right;
     padding: 0px;
+}
+
+.lunch-footer{
+    text-align: center;
+    padding-top: 0px;
 }
 
 /* Menu End */
