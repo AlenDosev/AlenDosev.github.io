@@ -3,7 +3,7 @@
 
 <head>
   <title>It's corona time</title>
-  <link rel="icon" sizes="192x192" href="https://loyalty-app.jumbo.com/icon.png">
+  <link rel="icon" sizes="192x192" href="images/icon.webp">
   <!-- Meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +18,23 @@
     #image {
       width: 40%;
     }
+
+    @media only screen and (max-width: 600px) {
+      #image {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <img id="image" src="images/1.svg" />
-
   <script>
+    setTimeout(function(){ 
+          var audio = new Audio('music/corona.mp3');
+          audio.play();
+     }, 2000);
+    
     let temp = 1;
     setInterval(function(){    
       document.getElementById("image").src = "images/" + temp + ".svg";
