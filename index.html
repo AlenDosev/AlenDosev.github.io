@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" onclick="test()">
 <head>
   <title>It's corona time</title>
   <link rel="icon" sizes="192x192" href="images/icon.webp">
@@ -29,11 +28,17 @@
 
 <body>
   <img id="image" src="images/1.svg" />
+  <audio loop id="playAudio" style="display: none;">
+    <source src="music/corona.mp3">
+  </audio>
   <script>
-    setTimeout(function(){ 
-          var audio = new Audio('music/corona.mp3');
-          audio.play();
-     }, 2000);
+    var toPlay = true;
+    function test() {
+      if(toPlay) {
+        document.getElementById('playAudio').play();
+        toPlay = false;
+      }
+    }
     
     let temp = 1;
     setInterval(function(){    
