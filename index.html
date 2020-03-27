@@ -30,20 +30,17 @@
 
 <body>
   <img id="image" src="images/1.svg" />
-  <audio loop id="playAudio" style="display: none;">
-    <source src="music/corona.mp3">
-  </audio>
   <script>
-    var toPlay = true;
-    function test() {
-      if (toPlay) {
-        document.getElementById('playAudio').play();
-        toPlay = false;
-      }
-    }
-
     const total = 7;
     let temp = 1;
+    let seconds = 500;
+    for(let i=1;i<=total;i++) {
+      seconds = seconds * 1.5;
+      setTimeout(()=> {
+        var newImg = new Image;
+        newImg.src="images/" + i + ".svg";
+      }, seconds)     
+    }
     setInterval(function () {
       document.getElementById("image").src = "images/" + temp + ".svg";
       if (temp === total) {
